@@ -1,55 +1,92 @@
-Clasificación Marea Roja
-==============================
+### *Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial.*
+### *Politécnico Malvinas Argentinas.*
 
-Utilizacion algoritmos de clasificacion en datos de marea roja de Ushuaia
+## Aprendizaje Automático
+Autor: Visñuk Victor.
+# **Clasificación Marea Roja**
+*Utilizacion de las técnicas de aprendizaje automatico aprendidas a lo largo de la cursada en el campo de la marea roja a fines de predecir la aparicion de toxinas mediante clasificación.*
 
-Project Organization
+##### Entrega 1: Descripción y Formulación del ObjetivoEntrega 1: Descripción y Formulación del Objetivo
+
 ------------
 
+Se conoce como marea roja a la proliferación de una o distintos tipos de organismos en diferentes cuerpos de agua que contienen diferentes tipos de toxinas que mediante el proceso de bioacumulación pueden afectar a los seres humanos. Se la denomina marea roja o hemotalasia debido al cambio de color que se percibe localmente en el agua derivado del aumento localizado de estos organismos.
+“Estos fenómenos se inician, desarrollan y desaparecen debido a la interacción de factores biológicos intra e interespecíficos, oceanográficos y meteorológicos, procesos aun no totalmente conocidos en general” (Marea Roja en el Canal Beagle, Julio H. Vinuesa 1993).
+Existen distintas especies con toxinas de distinto nivel de peligrosidad con síntomas que van desde diarreas y vómitos hasta toxinas de tipo paralizante que pueden llevar a la muerte por insuficiencia respiratoria.
+Actualmente y desde hace muchos años se realizan estudios periódicos de monitoreo en distintos organismos particularmente cholga y mejillón en los cuales mediante un procedimiento se inyecta a ratones, existen datos tabulados según el tiempo que tarde en morir y los niveles de toxina.
+Al ser estos moluscos habitantes del intermareal además de ser consumidos luego de la recolección y venta por personas dedicadas a la pesca pueden ser recolectados de sus bancos costeros por cualquier persona que sepa identificar sus zonas y épocas.
+Esto hace que la detección temprana de este tipo de sucesos se vuelva crucial para evitar estas consecuencias, y en caso de poder predecirse un brote pueden tomarse medidas que eviten aun mas las consecuencias como adelantar la “cosecha” de los moluscos previo al brote.
+Partimos con la hipótesis de que es posible determinar la presencia de toxinas mediante distintos datos meteorológicos (temperatura, viento, precipitaciones, presión, etc.) y oceanográficos (salinidad, mareas, temperatura del agua, etc.).
+
+------------
+
+
+**Las preguntas de investigación del proyecto son:**
+
+-	¿Es posible integrar los datos provenientes de los análisis de monitoreo de marea roja con datos meteorológicos y oceanográficos de sus respectivas fechas?
+-	¿Existe relación entre estos datos, meteorológicos y oceanográficos, respecto a la aparición de marea roja la ciudad de Ushuaia?
+-	¿Es posible entrenar un algoritmo de aprendizaje supervisado utilizando como datos de entrenamiento los datos oceanográficos y meteorológicos y como target la aparición o no de marea roja?
+-	¿Es posible realizar predicciones con este modelo utilizando datos nuevos con la precisión adecuada?
+
+Todas estas englobadas en la pregunta clave del proyecto ¿Se puede clasificar mediante las diferentes variables predictoras, meteorológicas y oceanográficas, si en un determinado momento hay o no marea roja?
+
+------------
+**Las distintas etapas del proyecto son:**
+-	Obtención de los datos: datos de los análisis de la presencia de toxinas en distintos moluscos, datos meteorológicos y oceanográficos de los mismos periodos.
+-	Integración y limpieza de los datos provenientes de las distintas fuentes.
+-	Análisis exploratorio de los datos en busca de comprender mejor los datos y encontrar patrones y preparación de los datos para el modelado.
+-	Modelar los datos en los distintos algoritmos de clasificación que podemos utilizar y analizar sus resultados, en esta etapa también se optimizan los distintos modelos y culmina con la elección del modelo más eficiente.
+-	Visualizar y comunicar los resultados del modelo.
+
+Estas etapas si bien siguen un orden se retroalimentan y pueden retomarse o reiniciarse en base a las salidas de las otras etapas.
+
+------------
+
+### Organizacion del Repositorio
+    
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── Makefile           <- Makefile con comandos como `make data` o `make train`
+    ├── README.md          <- El README del nivel superior para desarrolladores o usuarios de este proyecto.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── external       <- Datos de fuentes externas.
+    │   ├── interim        <- Datos intermedios que han sido transformados.
+    │   ├── processed      <- Datasets finales para el modelado.
+    │   └── raw            <- Datos crudos internos.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs               <- Un proyecto Sphinx por defecto, vea sphinx-doc.org para mas detalles.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── models             <- Modelos entrenados, predicciones o resumenes de modelos.
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks. La convencion para            		nombrarlos es un
+    │                                    numero (para ordenarlos) seguido de las iniciales del creador y una descripcion corta 
+    │                                   demilitada por "-" por ejemplo `1.0-jqp-exploracion-inicial-datos`.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references         <- Diccionario de datos, manuales y otro material explicativo.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── reports            <- Analisis generado como HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Graficos y figuras generadas para ser usadas en reportes.
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements.txt   <- El archivo de requerimientos para reproducir el ambiente de analisis por ejemplo
+    │                         generado con `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    ├── setup.py           <- hace el proyecto instalable mediante pip  (pip install -e .) asi src puede ser importado. can be imported
+    ├── src                <- Codigo fuente usado en este proyecto.
+    │   ├── __init__.py    <- Hace a src un modulo de Python
     │   │
-    │   ├── data           <- Scripts to download or generate data
+    │   ├── data           <- Scripts para descargar o generar los datos.
     │   │   └── make_dataset.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   ├── features       <- Scripts para transformar los datos crudos en features para el modelado.
     │   │   └── build_features.py
     │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
+    │   ├── models         <- Scripts para entrenar modelos y luego hacer predicciones.
     │   │   ├── predict_model.py
     │   │   └── train_model.py
     │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │   └── visualization  <- Scripts para crear visualizaciones orientadas a la exploracion de datos o a los resultados.
     │       └── visualize.py
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── tox.ini            <- archvi tox con ajustes para ejecutar tox; vea tox.readthedocs.io
 
 
 --------
