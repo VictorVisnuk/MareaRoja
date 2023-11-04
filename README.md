@@ -23,10 +23,11 @@ Partimos con la hipótesis de que es posible determinar la presencia de toxinas 
 
 **Las preguntas de investigación del proyecto son:**
 
-•	¿Es posible integrar los datos provenientes de los análisis de monitoreo de marea roja con datos meteorológicos y oceanográficos de sus respectivas fechas?
-•	¿Existe relación entre estos datos, meteorológicos y oceanográficos, respecto a la aparición de marea roja la ciudad de Ushuaia?
-•	¿Es posible entrenar un algoritmo de aprendizaje supervisado utilizando como datos de entrenamiento los datos oceanográficos y meteorológicos y como target la aparición o no de marea roja?
-•	¿Es posible realizar predicciones con este modelo utilizando datos nuevos con la precisión adecuada?
+-	¿Es posible integrar los datos provenientes de los análisis de monitoreo de marea roja con datos meteorológicos y oceanográficos de sus respectivas fechas?
+-	¿Existe relación entre estos datos, meteorológicos y oceanográficos, respecto a la aparición de marea roja la ciudad de Ushuaia?
+-	¿Es posible entrenar un algoritmo de aprendizaje supervisado utilizando como datos de entrenamiento los datos oceanográficos y meteorológicos y como target la aparición o no de marea roja?
+-	¿Es posible realizar predicciones con este modelo utilizando datos nuevos con la precisión adecuada?
+
 Todas estas englobadas en la pregunta clave del proyecto ¿Se puede clasificar mediante las diferentes variables predictoras, meteorológicas y oceanográficas, si en un determinado momento hay o no marea roja?
 
 ------------
