@@ -1,5 +1,5 @@
 ## Origen y descripción de los datos archivos TPM 2021 y TPM 2022
-**Son datos provenientes del laboratorio para la emisión de certificados de Toxinas Paralizantes por moluscos (TPM) para sus respectivos años (2021 y 2022).**
+**Son datos provenientes del Laboratorio de Toxinas y Microbiología de la ciudad de Ushuaia para sus respectivos años (2021 y 2022). Los datos fueron solicitados al laboratorio el dia 23/10/2023 y fueron enviados en formato excel via correo eléctronico**
 
 #### Diccionario de datos
 | Variable | Descripción | Tipo de Dato |
