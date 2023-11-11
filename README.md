@@ -6,7 +6,7 @@ Autor: Visñuk Victor.
 # **Clasificación Marea Roja**
 *Utilizacion de las técnicas de aprendizaje automatico aprendidas a lo largo de la cursada en el campo de la marea roja a fines de predecir la aparicion de toxinas mediante clasificación.*
 
-##### Entrega 1: Descripción y Formulación del ObjetivoEntrega 1: Descripción y Formulación del Objetivo
+##### Entrega 1: Descripción y Formulación del Objetivo
 
 ------------
 
