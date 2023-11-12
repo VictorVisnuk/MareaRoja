@@ -4,7 +4,7 @@ Dentro de la exploración de los datos se encontraron los siguientes patrones de
 
 *Las distribuciones de las variables en los días de análisis positivos y negativos siguen aproximadamente la misma distribución con las siguientes particularidades:*
 * En las variables de temperatura la distribución de los positivos esta corrida hacia el lado derecho lo que confirma la suposición de una influencia de las altas temperaturas a la aparición de marea roja.[![Temperatura](Distribucion Temperatura "Temperatura")](https://github.com/VictorVisnuk/MareaRoja/blob/main/reports/figures/Figura2.png "Temperatura")
-* En las variables de radiación solar se observa una interesante distribución donde en existe un pico amesetado de positivos en el rango de la mediana de la distribución y su consecuente baja de negativos lo que puede indicar que ese rango de radiación afecta particularmente al fenómeno. [![](Radiacion)](https://github.com/VictorVisnuk/MareaRoja/blob/main/reports/figures/Figura1.png)
+* En las variables de radiación solar se observa una interesante distribución donde en existe un pico amesetado de positivos en el rango de la mediana de la distribución y su consecuente baja de negativos lo que puede indicar que ese rango de radiación afecta particularmente al fenómeno. [[![Grafico Radiacion](Radiación "Grafico Radiacion")](https://github.com/VictorVisnuk/MareaRoja/blob/main/reports/figures/Figura1.png "Grafico Radiacion")(https://github.com/VictorVisnuk/MareaRoja/blob/main/reports/figures/Figura1.png)
 * Las variables de viento no parecen afectar al fenómeno.
 
 
