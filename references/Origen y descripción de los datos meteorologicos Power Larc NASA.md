@@ -7,8 +7,8 @@ La obtencion de los mismos se realizó mediante descarga desde la pagina web htt
 | ------------ | ------------ | ------------ |
 | YEAR| Año del dato| Entero|
 | DOY | Dia del año (0-366)| Entero |
-| ALLSKY_SFC_PAR_TOT| Radiación descendiente de onda corta (todo el cielo) | Real (flotante, dos decimales) |
-| CLRSKY_SFC_PAR_TOT| Radiación descendiente de onda corta (cielo despejado) | Real (flotante, dos decimales) |
+| ALLSKY_SFC_PAR_TOT| Radiación descendiente de onda corta todo el cielo (W/m2) | Real (flotante, dos decimales) |
+| CLRSKY_SFC_PAR_TOT| Radiación descendiente de onda corta cielo despejado (W/m2)| Real (flotante, dos decimales) |
 | T2M | Temperatura a 2 metros (°C)|  Real (flotante, dos decimales) |
 | T2MDEW | Punto de rocío/escarcha a 2 metros (°C) |  Real (flotante, dos decimales) |
 | T2MWET | Temperatura de bulbo húmedo a 2 metros (C) |  Real (flotante, dos decimales) |
